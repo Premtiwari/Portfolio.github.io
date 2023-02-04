@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{font-family: sans-serif;}
+
+header{
+    background: url("./images/19362653.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+}
+/* navigation section  */
+#portfolio-logo{
+    font-size: 40px;
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.nav-btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-bi-list{font-size: 3rem;}
+
+.nav-items{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.nav-items li a{
+    padding: 1rem;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+    color: white;
+    background-color: #000;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+
+.nav-items li a:hover{
+    background: gray;
+    transition: .3s;
+}
+
+header #header-title{
+    color: black;
+    padding: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+#pt{font-size: 20px;}
+
+/* about section  */
+.about-section span{
+    font-weight: 600;
+}
+/* left side   */
+.skills{
+    padding: 2rem;
+    list-style: none;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.skills li{
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.progress .progress-bar{
+    background-color: blueviolet;
+    color: white;
+}
+/* right side  */
+.about-section .row .right li{
+    color: gray;
+    list-style: none;
+
+}
+
+.about-section h2{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+/* project section  */
+.projects-section{
+    letter-spacing: 1px;
+    background-color:blueviolet;
+}
+
+.project-col{ 
+    margin: 1.6rem auto;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, .3);
+    padding: 0 !important;
+    border-radius: 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.project-col a{
+    text-decoration: none;
+}
+
+.project-col h6{
+    padding: 10px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.project-col:hover{
+    transform: scale(1.1,1.1);
+    transition: .4s;
+}
+.project-col img{
+    border-radius: 10px 10px 0 0;
+}
+.project-col img:hover{
+    opacity: 0.5;
+}
+
+.project-btn{
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.project-btn:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.4s;
+}
+/* contact section  */
+
+.input-box textarea{resize: none;}
+
+.contact-section .left{
+    margin: auto;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.input-box small{
+    color: red;
+    margin-top: 8px;
+}
+.input-box input , textarea{
+    width: 70%;
+    padding: 10px 0;
+}
+
+.input-box label{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.input-box label span{
+    text-transform: lowercase;
+}
+.contact-btn{
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px 0;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+
+.contact-section .right h6{text-transform: uppercase;}
+.contact-section .right a{
+    text-decoration: none;
+    color: gray;
+}
+
+footer p{
+    color: white;
+    background-color: blueviolet;
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+@media only screen and (max-width:768px) {
+    .nav-items{
+        display: none;
+    }
+    .nav-btn{
+        display: block;
+    }
+    header #header-title{
+        font-size: 2rem;
+    }
+ 
+    .input-box{
+      margin: auto;
+    }
+    .input-box input{
+        width: 100%;
+    }
+    .contact-btn{
+        margin: auto;
+    }
+
+}
